@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gesture Reels</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <video
+      id="reel"
+      autoplay
+      controls
+      loop>
+
+      <source
+        src="videos/video1.mov"
+        type="video/mov">
+
+    </video>
+
+  </div>
+
+  <video
+    id="webcam"
+    autoplay
+    playsinline>
+  </video>
+
+  <div id="status">
+    Waiting for hand...
+  </div>
+
+  <div id="likeMessage"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
